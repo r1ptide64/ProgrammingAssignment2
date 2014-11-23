@@ -23,7 +23,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ## value along with a descriptive message.
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
         inv <- x$getInv()
         if(!is.null(inv)) {
                 message("This is the cached inverse.")
